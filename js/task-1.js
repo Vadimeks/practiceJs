@@ -183,3 +183,81 @@
 //   return (total = amount * taxRate);
 // }
 // console.log(calculateTax(150, 0.5));
+// function getProductPrice(productName) {
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+
+//   for (const product of products) {
+//     if (product.name === productName) {
+//       return product.price;
+//     }
+//   }
+//   return null;
+// }
+
+// console.log(getProductPrice("Radar"));
+// function getAllPropValues(propName) {
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+//   const getAll = [];
+//   for (const product of products) {
+//     if (product[propName] !== undefined) {
+//       getAll.push(product[propName]);
+//     }
+//   }
+//   return getAll;
+// }
+
+// console.log(getAllPropValues("price")); // Вынік: [1300, 2700, 400, 1200]
+// function calculateTotalPrice(productName) {
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+
+//   for (const product of products) {
+//     if (product.name === productName) {
+//       return product.price * product.quantity;
+//     }
+//   }
+
+//   return `Product ${productName} not found!`;
+// }
+
+// console.log(calculateTotalPrice("Radar")); // Вынік: 5200
+// console.log(calculateTotalPrice("Scanner")); // Вынік: 8100
+// console.log(calculateTotalPrice("Nonexistent")); // Вынік: Product Nonexistent not found!
+// function getExtremeScores(scores) {
+//   let best = 0;
+//   let worst = 0;
+//   for (const score of scores) {
+//     best = Math.max(...scores);
+//     worst = Math.min(...scores);
+//   }
+//   return `{best:${best}, worst:${worst}}`;
+// }
+// console.log(getExtremeScores([89, 64, 42, 17, 93, 51, 26]));
+// console.log(getExtremeScores([19, 7, 4, 17, 81, 24]));
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+
+// const allScores = [
+//   ...firstGroupScores,
+//   ...secondGroupScores,
+//   ...thirdGroupScores,
+// ];
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
+// console.log(bestScore);
+// console.log(worstScore);
