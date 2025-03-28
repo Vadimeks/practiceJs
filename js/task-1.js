@@ -261,3 +261,52 @@
 // const worstScore = Math.min(...allScores);
 // console.log(bestScore);
 // console.log(worstScore);
+//////////////////////////////////////////////////////////////////////////////
+// function stringChanger(str) {
+//   let result = "";
+//   let letters = ["а", "е", "є", "и", "і", "ї", "о", "у", "ю", "я"];
+//   for (let i = 0; i < str.length; i += 1) {
+//     if (letters.includes(str[i])) {
+//       result += str[i].toUpperCase();
+//     } else {
+//       result += str[i].toLowerCase();
+//     }
+//   }
+//   return result;
+// }
+// console.log(stringChanger("привет мир абракадабра"));
+
+// Дана строка. Выведите в консоль длину этой строки.
+// let str = "Hello world";
+// console.log(str.length);
+
+// Дана строка. Выведите в консоль последний символ строки.
+// let str = "hello world";
+// console.log(str[str.length - 1]);
+// Дано число.Проверьте, четное оно или нет.
+// let num = 12;
+// if (num % 2 === 0) {
+//   console.log("Чысло чотнае");
+// } else {
+//   console.log("Чысло нечотнае");
+// }
+// Даны два слова. Проверьте, что первые буквы этих слов совпадают.
+// let str1 = "Hello";
+// let str2 = "hworld";
+// if (str1[0].toLowerCase() === str2[0].toLowerCase()) {
+//   console.log("true");
+// } else {
+//   console.log("false");
+// }
+// Дано слово.Получите его последнюю букву.
+//  Если слово заканчивается на мягкий знак, то получите предпоследнюю букву.
+// let str = "Hello worldsud";
+// if (str[str.length - 1] === "d") {
+//   console.log(str[str.length - 2]);
+// } else {
+//   console.log(str[str.length - 1]);
+// }
+// Дано число. Выведите в консоль первую цифру этого числа.
+// let num = 1564;
+// let res = num.toString()[0];
+// console.log(res);
