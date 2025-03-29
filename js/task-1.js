@@ -307,6 +307,8 @@
 //   console.log(str[str.length - 1]);
 // }
 // Дано число. Выведите в консоль первую цифру этого числа.
-// let num = 1564;
+// let num = 5664;
 // let res = num.toString()[0];
 // console.log(res);
+// console.dir(res);
+// console.table(res);
