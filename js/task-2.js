@@ -193,3 +193,79 @@
 // const a = [1, 2, 3, 4, 5, 6, 7];
 // const b = a.slice(3, 6).push(4);
 // console.log("b =", b);
+// _________________________________________________________________________________
+// function makePizza() {
+//   return "Your pizza is being prepared, please wait.";
+// }
+
+// const result = makePizza();
+// const pointer = makePizza;
+// function deliverPizza(pizzaName) {
+//   return `Delivering ${pizzaName} pizza.`;
+// }
+
+// function makePizza(pizzaName) {
+//   return `Pizza ${pizzaName} is being prepared, please wait...`;
+// }
+
+// function makeMessage(pizzaName, callback) {
+//   if (callback === deliverPizza) {
+//     return deliverPizza(pizzaName);
+//   } else if (callback === makePizza) {
+//     return makePizza(pizzaName);
+//   }
+// }
+// const numbers = [5, 10, 15, 20, 25];
+
+// Класичний for
+// for (let i = 0; i < numbers.length; i += 1) {
+//   console.log(`Index ${i}, value ${numbers[i]}`);
+// }
+// Перебираючий метод forEach
+// numbers.forEach(function (number, index) {
+//   console.log(`Index ${index}, value ${number}`);
+// });
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach(function (price) {
+//     totalPrice += price;
+//   });
+
+//   return totalPrice;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// function filterArray(numbers, value) {
+//   let num2 = [];
+//   numbers.forEach(function (number) {
+//     if (number > value) {
+//       num2.push(number);
+//     }
+//   });
+
+//   return num2;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// Дано число. Выведите в консоль первую цифру этого числа.
+// const a = 120344;
+// console.log(String(a)[0]);
+// Дано число. Выведите в консоль последнюю цифру этого числа.
+// const a = 120344;
+// console.log(String(a)[String(a).length - 1]);
+// Дано число. Выведите в консоль сумму первой и последней цифры этого числа.
+// const a = 120344;
+// const firstNum = String(a)[0];
+// const lastNum = String(a)[String(a).length - 1];
+// console.log(Number(firstNum) + Number(lastNum));
+// Дано число. Выведите количество цифр в этом числе.
+// const a = 120344;
+// console.log(String(a).length);
+// Даны два числа. Проверьте, что первые цифры этих чисел совпадают.
+// const a = 52545;
+// const b = 546464;
+// if (String(a)[0] === String(b)[0]) {
+//   console.log("ok");
+// } else {
+//   console.log("not ok");
+// }
