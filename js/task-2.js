@@ -630,3 +630,49 @@
 //   .map((book) => book.author)
 //   .toSorted((a, b) => a.localeCompare(b));
 // console.log(names);
+// const pizzaPalace = {
+//   pizzas: ["Supercheese", "Smoked", "Four meats"],
+//   checkPizza(pizzaName) {
+//     return this.pizzas.includes(pizzaName);
+//   },
+//   order(pizzaName) {
+//     const isPizzaAvailable = this.checkPizza(pizzaName);
+
+//     if (!isPizzaAvailable) {
+//       return `Sorry, there is no pizza named «${pizzaName}»`;
+//     }
+
+//     return `Order accepted, preparing «${pizzaName}» pizza`;
+//   },
+// };
+// console.log(pizzaPalace.order("Smoked"));
+// console.log(pizzaPalace.order("Four meats"));
+// console.log(pizzaPalace.order("Big Mike"));
+// console.log(pizzaPalace.order("Viennese"));
+// class Car {
+//   #price;
+//   static maxPrice = 50000;
+//   constructor(params) {
+//     this.#price = params.price;
+//   }
+
+//   get price() {
+//     return this.#price;
+//   }
+
+//   set price(newPrice) {
+//     if (newPrice <= Car.maxPrice) {
+//       this.#price = newPrice;
+//     }
+//     return newPrice;
+//   }
+// }
+
+// const audi = new Car({ price: 35000 });
+// console.log(audi.price); // 35000
+
+// audi.price = 49000;
+// console.log(audi.price); // 49000
+
+// audi.price = 51000;
+// console.log(audi.price); // 49000
