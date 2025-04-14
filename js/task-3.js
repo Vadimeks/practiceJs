@@ -196,3 +196,11 @@
 //  методи для отримання інформації про тварину та для годівлі тварин.
 //  Крім того, зоопарк повинен мати метод для додавання тварин до списку та
 // метод для виведення списку всіх тварин у зоопарку.
+// class User {
+//   constructor(name, email) {
+//     console.log(name, email);
+//   }
+// }
+
+// const mango = new User("Mango", "mango@mail.com"); // "Mango mango@mail.com"
+// console.log(mango); // {}
