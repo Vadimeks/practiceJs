@@ -287,14 +287,23 @@
 //   13, 14, 15, 16, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
 // ];
 // console.log(congratsIfMoreThan100(users));
-const obj = {
-  name: "Igor",
-  sex: "mail",
-  age: 18,
-};
-for (const test in obj) {
-  console.log(test);
+// const obj = {
+//   name: "Igor",
+//   sex: "mail",
+//   age: 18,
+// };
+// for (const test in obj) {
+//   console.log(test);
+// }
+// for (const key in obj) {
+//   console.log(obj[key]);
+// }
+function squareArr(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = arr[i] * arr[i];
+  }
+  return arr;
 }
-for (const key in obj) {
-  console.log(obj[key]);
-}
+const myArray = [1, 2, 3, 5];
+
+console.log(squareArr(myArray));
