@@ -271,18 +271,30 @@
 
 // console.log(_.shuffle([1, 2, 3, 4])); // [4, 1, 3, 2]
 // console.log(_.shuffle([1, 2, 3, 4])); // [3, 2, 1, 4]
-function congratsIfMoreThan100(users) {
-  if (users.length > 100) {
-    alert("Greets! You have more than 100 subscribers!");
-  } else {
-    alert("Less than 100 yet");
-  }
+
+// function congratsIfMoreThan100(users) {
+//   if (users.length > 100) {
+//     alert("Greets! You have more than 100 subscribers!");
+//   } else {
+//     alert("Less than 100 yet");
+//   }
+// }
+// const users = [
+//   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 1, 2, 3, 4, 5, 6, 7, 8,
+//   9, 10, 11, 12, 13, 14, 15, 16, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
+//   15, 16, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 1, 2, 3, 4, 5,
+//   6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+//   13, 14, 15, 16, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+// ];
+// console.log(congratsIfMoreThan100(users));
+const obj = {
+  name: "Igor",
+  sex: "mail",
+  age: 18,
+};
+for (const test in obj) {
+  console.log(test);
 }
-const users = [
-  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 1, 2, 3, 4, 5, 6, 7, 8,
-  9, 10, 11, 12, 13, 14, 15, 16, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
-  15, 16, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 1, 2, 3, 4, 5,
-  6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
-  13, 14, 15, 16, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
-];
-console.log(congratsIfMoreThan100(users));
+for (const key in obj) {
+  console.log(obj[key]);
+}
